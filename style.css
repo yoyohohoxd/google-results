@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+    color: #222222;
+}
+/* Top navbar */
+
+nav.nav {
+    position: relative;
+    top: 20px;
+}
+
+form {
+    padding-top: 0px;
+    position: sticky;
+    display: inline;
+    vertical-align: middle;
+}
+
+.logo {
+    padding: 0px 28px 0px 30px;
+    height: 31.33px;
+    width: 91.996px;
+}
+
+#searchbar {
+    height: 46px;
+    width: 582px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+}
+
+#searchbar:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0)
+}
+
+.nav1 {
+    float: right;
+    vertical-align: middle;
+}
+
+div.nav2 {
+    position: relative;
+    top: 40px;
+    left: 165px;
+    margin-right: 10px;
+}
+
+nav.nav2r {
+    display: inline-block;
+    position: relative;
+    left: 240px;
+}
