@@ -3,6 +3,8 @@ body {
     font-size: 14px;
 
     color: #222222;
+    margin: 0;
+    max-width: auto;
 }
 /* Top navbar */
 
@@ -22,6 +24,19 @@ form {
     padding: 0px 28px 0px 30px;
     height: 31.33px;
     width: 91.996px;
+    position: relative;
+    top: 10px;
+}
+
+a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #666;
+}
+
+a:hover {
+    color: #1a73e8;
+    border-bottom: 3px solid #1a73e8;
 }
 
 #searchbar {
@@ -31,6 +46,9 @@ form {
     border-radius: 24px;
     border: 1px solid #dfe1e5;
     box-shadow: none;
+    padding-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
 }
 
 #searchbar:hover {
@@ -38,6 +56,37 @@ form {
     border-color: rgba(223,225,229,0)
 }
 
+#searchbar:focus {
+    outline: none;
+}
+
+a.grid {
+    position: relative;
+    top: 13px;
+    margin-right: 8px;
+    opacity: 0.6;
+}
+
+a.grid:hover {
+    opacity: 1;
+}
+
+a.signin {
+    color: white;
+    background-color: #4285f4;
+    padding: 7px 15px;
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 2px;
+    position: relative;
+    top: 10px;
+}
+
+a.signin:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
 .nav1 {
     float: right;
     vertical-align: middle;
@@ -63,7 +112,7 @@ nav.nav2r {
 div.border {
     border: 0.5px solid #dfe1ef;
     position: relative;
-    top: 60px;
+    top: 52px;
     margin-bottom: 5px;
 }
 
@@ -74,6 +123,10 @@ article {
     top: 60px;
     display: block;
     left: 175px;
+}
+
+div.hits  {
+    width: 100%;
 }
 
 div.infobox {
@@ -123,16 +176,50 @@ ol li{
     display: inline-block;
     line-height: 1.33;
     color: #777;
+}
 
+a.link {
+    font-size: 20px;
+    line-height: 1.3;
+    display: block;
+    text-decoration: none;
+    width: fit-content;
+    color: blue;
+}
+
+a.link:hover {
+    text-decoration: underline;
+    border-bottom: none;
+}
+
+cite.linktext {
+    color: #006621;
+    font-size: 16px;
+    font-style: normal;
+    display: block;
+    margin-top: 1px;
+}
+
+p.linkp {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    color: #545454;
+    display: block;
+    line-height: 1.57;
+    word-wrap: break-word;
+    margin-top: 1px;
+}
+
+div.searchresult {
+    max-width: 600px;
+    margin-left: 175px;
 }
 
 /* Footer */
 
 .footer {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
     text-align: left;
     background: #f2f2f2;
     font-family: Arial, Helvetica, sans-serif;
@@ -140,6 +227,9 @@ ol li{
     border-top: 1px solid #e4e4e4;
     line-height: 40px;
     padding-left: 24px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .country {
