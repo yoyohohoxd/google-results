@@ -127,6 +127,7 @@ article {
 
 div.hits  {
     width: 100%;
+    color: #777;
 }
 
 div.infobox {
@@ -146,6 +147,8 @@ img.infoboxpic {
     float: right;
     left: 200px;
     bottom: 7px;
+    overflow: hidden;
+    background-color: #fff;
 }
 
 div.infoboxlink {
@@ -161,6 +164,50 @@ strong {
     font-size: 16px;
     margin-bottom: 15px;
     display: inline-block;
+}
+
+.paa {
+    border: solid 1px #dfe1e5;
+    border-radius: 8px;
+}
+
+.paa h3 {
+    color: #222;
+    font-size: 22px;
+    font-weight: normal;
+    border-bottom: solid 1px #dfe1e5;
+    margin: 0px;
+    padding: 9px 40px 9px 16px;
+}
+
+.paa h2 {
+    color: #222;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 9px 40px 9px 16px;
+    line-height: 1.57;
+    border-bottom: solid 1px #dfe1e5;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+a.fb {
+    display: block;
+    float: right;
+    font-style: italic;
+    color: #777;
+    font-size: 12px;
+}
+
+a.fb:hover {
+    border-bottom: none;
+    text-decoration: underline;
+}
+
+span.fb {
+    display: flow-root;
+    padding: 4px 16px 0px 16px;
+    margin-bottom: 27px;
 }
 
 ol li{
@@ -181,15 +228,19 @@ ol li{
 a.link {
     font-size: 20px;
     line-height: 1.3;
-    display: block;
+    display: inline-block;
     text-decoration: none;
     width: fit-content;
-    color: blue;
+    color: #1a0dab;
 }
 
 a.link:hover {
     text-decoration: underline;
     border-bottom: none;
+}
+
+a.link:visited {
+    color: #609;
 }
 
 cite.linktext {
@@ -217,6 +268,94 @@ div.searchresult {
     margin-left: 175px;
 }
 
+div.videos {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+div.videos h3 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #222;
+    line-height: 1.3;
+}
+
+div.vid1 {
+    float: left;
+    width: 203px;
+    margin: 4px;
+    border: solid 1px #dfe1e5;
+    border-radius: 8px;
+    overflow: hidden;
+    max-height: 297px;
+}
+
+div.vid2 {
+    display: inline-block;
+    width: 203px;
+    margin: 4px;
+    border: solid 1px #dfe1e5;
+    border-radius: 8px;
+    overflow: hidden;
+    max-height: 297px;
+}
+
+video {
+    width: 100%;
+}
+
+a.video {
+    font-size: 16px;
+    color: #1a0dab;
+    border-bottom: none;
+    height: 6.875em;
+    -webkit-line-clamp: 5;
+    line-height: 1.375;
+    padding: 16px 16px 0px 16px;
+    display: block;
+}
+
+a.video:hover {
+    text-decoration: underline;
+}
+
+a.video:visited {
+    color: #609;
+}
+
+p.sub {
+    color: #808080;
+    padding-left: 16px;
+    padding-right: 16px;
+    flex-grow: 1;
+}
+
+p.date {
+    display: block;
+    position: relative;
+    bottom: 10px;
+    margin: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+div.related {
+    border: solid 1px #dfe1e5;
+    border-radius: 8px;
+}
+
+p.rs {
+    margin: 0px 0px 3px 16px;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+h3.bs {
+    margin: 0px 16px;
+}
+
 /* Footer */
 
 .footer {
@@ -227,7 +366,6 @@ div.searchresult {
     border-top: 1px solid #e4e4e4;
     line-height: 40px;
     padding-left: 24px;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
@@ -241,6 +379,8 @@ div.searchresult {
 .footerbar a {
     color: rgba(0,0,0,.54);
     padding-right: 10px;
+    text-decoration: none;
+    border-bottom: none;
 }
 
 .right {
